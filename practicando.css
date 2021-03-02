@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-top: 175px;
+}
+
+/*----------------------Header--------------------------*/
+.container-li {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 70px;
+  top: 0;
+  padding: 55px;
+  z-index: 100;
+  position: fixed;
+  align-items: center;
+  background-color: rgba(2, 4, 2, 0.89);
+  column-gap: 40px;
+  min-width: 100%;
+  /* margin-bottom: 30px; */
+}
+.li {
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
+  list-style: none;
+  color: rgba(214, 211, 31, 0.911);
+  position: relative;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.li:hover {
+  color: rgba(179, 80, 76, 0.822);
+}
+.hero-top {
+  background-image: url("https://www.cinemascomics.com/wp-content/uploads/2020/12/villanos-x-men-marvel-studios.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 380px;
+  opacity: 0.87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 5px 0px 0px 0px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 63px;
+  letter-spacing: 4px;
+  color: rgba(0, 0, 0, 1);
+  text-shadow: 5px 3px 2px rgb(104, 9, 194);
+  font-weight: 900;
+  font-family: "Permanent Marker", cursive;
+}
+
+.agregado {
+  font-family: "Permanent Marker", cursive;
+  text-shadow: 3px 2px 3px rgb(24, 39, 35);
+  font-size: 34px;
+  padding: 20px 20px;
+  letter-spacing: 1.2px;
+}
+
+/*----------------------Main--------------------------*/
+h2 {
+  font-size: 62px;
+  color: rgba(231, 228, 22, 0.931);
+  filter: contrast(70%);
+  text-shadow: 3px 2px 3px rgba(21, 9, 194, 0.966);
+  padding: 14px 5px 0px 20px;
+  font-family: "Permanent Marker", cursive;
+  padding: 40px 0px 40px 35px;
+  text-align: center;
+}
+.txt-intro {
+  margin: 0px 9px;
+  text-align: center;
+  position: relative;
+  color: rgba(20, 14, 27, 0.99);
+  text-shadow: 0px 2px 2px rgba(143, 58, 240, 0.952);
+  font-size: 28px;
+}
+h3 {
+  color: rgb(216, 231, 0);
+  text-shadow: 8px 2px 3px rgb(121, 14, 187);
+  font-family: "Potta One", cursive;
+  font-size: 34px;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 250;
+}
+
+.fechas {
+  color: rgb(216, 231, 0);
+  text-shadow: 8px 2px 3px rgb(121, 14, 187);
+  font-family: "Potta One", cursive;
+  font-size: 34px;
+  padding: 20px 40px;
+
+  position: relative;
+  z-index: 250;
+}
+.hero-mediums {
+  background-image: url("https://variety.com/wp-content/uploads/2013/06/marvel-logo-wallpaper.jpg");
+
+  background-position: center;
+  position: absolute;
+  z-index: -11;
+  filter: sepia(19%);
+  width: 100%;
+  height: 848px;
+}
+.hero-main {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/91U4epyKAYL._RI_.jpg");
+  z-index: 150;
+  position: absolute;
+  filter: hue-rotate(190deg) sepia(40%);
+  background-position: center bottom;
+  height: 100vh;
+  width: 100vw;
+
+  min-height: 100%;
+  margin: 20px 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p {
+  font-size: 31px;
+  font-weight: bold;
+
+  position: relative;
+  z-index: 200;
+
+  color: rgba(179, 19, 144, 0.952);
+  text-shadow: 2px 2px 2px rgba(47, 6, 129, 0.99);
+  margin: 0px 10px;
+  padding: 20px 3px;
+  font-family: "Gloria Hallelujah", cursive;
+
+  background-color: rgba(195, 206, 203, 0.5);
+}
+
+.seccion-historias {
+  position: relative;
+}
+
+.dif {
+  position: relative;
+  z-index: 200;
+}
+/*----------------------Footer--------------------------*/
+footer {
+  background-color: rgba(2, 4, 2, 0.89);
+}
+
+h4 {
+  font-size: 42px;
+  color: rgba(223, 2, 2, 0.931);
+  filter: contrast(70%);
+  text-shadow: 3px 2px 3px rgba(28, 16, 185, 0.966);
+  padding: 14px 5px 0px 20px;
+  font-family: "Permanent Marker", cursive;
+  padding: 40px 0px 40px 35px;
+}
+
+/*----------------------Media queries--------------------------*/
+@media screen and (min-width: 1430px) and (max-width: 1740px) {
+  h1 {
+    letter-spacing: 20px;
+    text-align: center;
+  }
+
+  .hero-mediums {
+    height: 100%;
+  }
+
+  .txt-art {
+    font-family: "Permanent Marker", cursive;
+    text-shadow: 3px 2px 3px rgb(24, 39, 35);
+    font-size: 34px;
+    padding: 20px 20px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1410px) {
+  body {
+    padding-top: 154px;
+  }
+
+  .li {
+    text-align: start;
+  }
+
+  .container-li {
+    grid-template-rows: 60px;
+    padding: 50px;
+  }
+
+  .hero-mediums {
+    height: 140vh;
+  }
+
+  h1 {
+    font-size: 50px;
+    letter-spacing: 15px;
+    text-align: center;
+  }
+
+  .hero-top {
+    background-size: cover;
+    width: 100%;
+    height: 270px;
+    opacity: 0.87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 5px 0px 0px 0px;
+  }
+
+  .txt-intro {
+    height: 700px;
+    background-color: rgba(246, 246, 246, 0.719);
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 27px;
+    color: rgba(143, 58, 240, 0.952);
+    text-shadow: 4px 2px 2px rgba(5, 4, 7, 0.99);
+    margin: 0px 10px;
+    padding: 10px 3px;
+    font-family: "Gloria Hallelujah", cursive;
+
+    background-color: rgba(0, 0, 0, 0.568);
+  }
+
+  h2 {
+    font-size: 40.32px;
+    color: rgba(231, 228, 22, 0.931);
+    filter: contrast(70%);
+    text-shadow: 3px 2px 3px rgba(21, 9, 194, 0.966);
+    padding: 14px 5px 0px 20px;
+    font-family: "Permanent Marker", cursive;
+    padding: 40px 0px 40px 35px;
+    text-align: center;
+  }
+}
